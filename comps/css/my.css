@@ -1,0 +1,177 @@
+/* Common Body Styling */
+
+.body{
+  padding: 20px;
+}
+
+h1,h2,h3,h4,a,p {
+  font-family: 'Arial';
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/* Nav Bar */
+
+.customNav li{
+  margin-right: 10px;
+}
+
+.customNavLink a{
+ color:black;
+ text-decoration: none;
+}
+
+.customNavLink a:hover{
+ color:black;
+ text-decoration: none;
+}
+
+.customNavHome a{
+ color:white;
+ text-decoration: none;
+}
+
+.customNavHome a:hover{
+ color:white;
+ text-decoration: none;
+}
+
+.nav-pusher{
+  margin-right: 125px;
+}
+
+/* Footer layout */
+
+.footer{
+  font-size: 12px;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Misc or currently uncatagorized */
+
+.markdown {
+  font-family: 'Arial';
+}
+
+.markdown a {
+  text-decoration: none;
+  color: blue;
+}
+
+.markdown a:hover {
+  opacity: 0.6;
+}
+
+.markdown h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* Common Table Styling */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  text-align: start;
+  vertical-align: top;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*table, item specific */
+.appLink{
+  color:blue;
+}
+
+.appLink:hover{
+  color:navy;
+  text-decoration: underline;
+}
+.userLink{
+  color:blue;
+}
+
+.userLink:hover{
+  color:navy;
+  text-decoration: underline;
+}
+
+.secureList li{
+  display: inline;
+  margin-right: 10px;
+}
+
+.appTable table{
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+.appTable td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+.editList li, h4, Button {
+  display: inline;
+}
+
+/* Style for Bootstrapped app list */
+.bootBoxCol{
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.bootSpace-right{
+  margin-right: 5px;
+}
+
+/*form styles*/
+.formInlineApps{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.formApps{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 10px;
+  margin: 5px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.upperinput{
+  text-transform : uppercase;
+}
