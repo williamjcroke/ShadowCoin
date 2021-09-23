@@ -7,3 +7,5 @@ npm install
 node server.js
 
 If successful, the application should then be running on localhost:3000
+
+This is still under development and no data should be taken as factual or used for real world analysis. 
