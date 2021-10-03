@@ -1,7 +1,4 @@
 import React from "react";
-//import Router from 'next/router';
-import $ from 'jquery';
-//import {Button, Form, Row, Col} from 'react-bootstrap';
 
 class SearchData extends React.Component {
     constructor(props) {

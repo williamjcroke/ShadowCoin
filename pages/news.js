@@ -25,13 +25,6 @@ export default function News({ feed, items }) {
   );
 }
 
-// export async function getStaticPaths() {
-//   return {
-//     paths: FEEDS.map((feed) => ({ params: { slug: feed.slug } })),
-//     fallback: false,
-//   };
-// }
-
 export async function getStaticProps({ params }) {
   const feed = FEEDS.find((feed) => feed.slug === 'crypto-news');
   const detailedFeed = await getFeed(feed.url);
@@ -45,15 +38,3 @@ export async function getStaticProps({ params }) {
     revalidate: 1,
   };
 }
-
-
-// import Layout from '../comps/MyLayout.js';
-// import NewsData from '../comps/functions/news.js';
-
-// export default function News() {
-//   return (
-//     <Layout>
-//       <NewsData screen="news-results" type="news-search"/>
-//     </Layout>
-//   );
-// }

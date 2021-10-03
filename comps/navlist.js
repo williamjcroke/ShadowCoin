@@ -1,4 +1,4 @@
-import {Button, Input} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import Link from 'next/link';
 
 const NavList = () => (
