@@ -1,6 +1,7 @@
 import React from "react";
 import $ from 'jquery';
 
+//Home page init
 class HomeTableData extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +13,7 @@ class HomeTableData extends React.Component {
         }
       }
 
+  //Async to await data
   async componentDidMount() {
     this.GetData(); 
   }
@@ -28,6 +30,7 @@ class HomeTableData extends React.Component {
     );
   }
 
+  //Post request to server.js and await data response
   async GetData() {
     let tmpDta = null;
    await $.post('/', function(data) {
@@ -38,6 +41,7 @@ class HomeTableData extends React.Component {
     this.GetScreen(); 
   }
 
+  //Set the screen data after response call
   GetScreen() {
 
     this.state.display = (
@@ -69,6 +73,7 @@ class HomeTableData extends React.Component {
 
     );
 
+      //Set screen state
     this.setState({display: this.state.display});
 
   }

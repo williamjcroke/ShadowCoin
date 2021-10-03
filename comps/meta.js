@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+//Meta data set
+
 export default function Help() {
     return (
         <Head>

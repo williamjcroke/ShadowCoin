@@ -1,5 +1,6 @@
 import Layout from '../comps/MyLayout.js';
 
+//Help page response
 export default function Help() {
   return (
     <Layout>

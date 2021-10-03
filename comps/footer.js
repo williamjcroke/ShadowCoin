@@ -1,3 +1,5 @@
+//Footer content
+
 const Footer = () => (
   <div className="footer">
     <hr/>

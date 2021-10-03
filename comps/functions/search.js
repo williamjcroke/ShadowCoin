@@ -1,6 +1,7 @@
 import React from "react";
 import $ from 'jquery';
 
+//Search page init
 class SearchData extends React.Component {
     constructor(props) {
         super(props);
@@ -12,10 +13,12 @@ class SearchData extends React.Component {
         }
       }
 
+  //Get data
   async componentDidMount() {
     this.GetData(); 
   }
-
+  
+  //Await display state set before rendering screen
   render() {
     let dataLoaded = this.state.display != null;
     return(
@@ -28,6 +31,7 @@ class SearchData extends React.Component {
     );
   }
 
+  //Send post to server.js to get back ticket data based on search input
   async GetData() {
 
     let tmpDta = null;
@@ -35,10 +39,11 @@ class SearchData extends React.Component {
       tmpDta = data;
     });
 
+    //Check if response is a string as this would designate an error on the ticket response
     if(typeof tmpDta === 'string' || tmpDta instanceof String){
         this.setState({ coinData: tmpDta });
         this.GetErrorScreen()
-    }else{
+    }else{ //Set the first object as response (single item search)
         this.setState({ coinData: tmpDta });
         tmpDta = tmpDta.data[Object.keys(tmpDta.data)[0]]
         this.setState({ coinData: tmpDta });
@@ -48,7 +53,7 @@ class SearchData extends React.Component {
   }
 
   GetScreen() {
-
+    //Called if response is valid, set the coin data to display
     this.state.display = (
         <div>
             <table className="text-center">
@@ -78,7 +83,7 @@ class SearchData extends React.Component {
   }
 
   GetErrorScreen() {
-
+    //Called if response is invalid, displays an error message and suggestion to user for search
     this.state.display = (
         <div>
             <h3>{this.state.coinData}</h3>

@@ -1,6 +1,8 @@
 import NavList from './navlist.js';
 import {DropdownButton} from 'react-bootstrap';
 
+//Header content and set NAV list
+
 const Header = () => (
   <div>
   <nav className="navbar navbar-expand-lg navbar-light bg-light customNav justify-content-between">

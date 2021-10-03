@@ -1,5 +1,7 @@
 import Parser from "rss-parser";
 
+//RSS feed setup for news page
+
 export const FEEDS = [
     {
       slug: "crypto-news",

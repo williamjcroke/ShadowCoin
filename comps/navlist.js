@@ -1,6 +1,8 @@
 import {Button} from 'react-bootstrap';
 import Link from 'next/link';
 
+//Navigation list for header
+
 const NavList = () => (
   <div>
     {}
